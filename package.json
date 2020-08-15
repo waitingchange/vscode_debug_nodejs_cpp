@@ -1,0 +1,16 @@
+{
+  "name": "async_work",
+  "version": "0.0.0",
+  "description": "Node.js Addons Example #9",
+  "main": "addon.js",
+  "private": true,
+  "gypfile": true,
+  "scripts": {
+    "test": "node addon.js",
+    "build:dev": "node-gyp configure --debug && node-gyp -j 16 build --debug"
+  },
+  "dependencies": {
+    "nan": "^2.14.1",
+    "bindings": "~1.5.0"
+  }
+}
